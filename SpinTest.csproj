@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NModbus4" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Models\ModbusSettings.cs" />
+    <Compile Include="Models\ProcessParameters.cs" />
+    <Compile Include="Services\ModbusClient.cs" />
+    <Compile Include="Services\SignalPollingService.cs" />
+    <Compile Include="Controls\ToggleButton.cs" />
+    <Compile Include="Controls\SignalIndicator.cs" />
+    <Compile Include="Views\MainForm.cs" />
+    <Compile Include="Views\MainForm.Designer.cs" />
+    <Compile Include="Program.cs" />
+  </ItemGroup>
+</Project>
